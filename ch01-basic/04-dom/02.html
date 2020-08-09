@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <input type="text" name="" id="giatri">
+        <input type="submit" value="click" onclick="get_value()">
+
+        <script>
+            // var element = document.getElementById("giatri");
+            var element = document.getElementsByTagName("input");
+            // var element = document.getElementsByClassName
+
+            function get_value(){
+                var result = element[0].value;
+                document.write(result);
+                alert(result);
+            }
+        </script>
+    </body>
+</html>

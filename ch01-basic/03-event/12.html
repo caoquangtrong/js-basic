@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <div id="result"></div>
+        <input type="button" value="stop random" id="stop_random">
+
+        <script>
+            var result = document.getElementById("result");
+            var button = document.getElementById("stop_random");
+            var html = document.getElementsByTagName("html")[0];
+
+            //hien thi day so random
+            function do_random(){
+                var ran = Math.random();
+                result.innerHTML = ran;
+            }
+
+            html.addEventListener("mousemove", do_random);
+
+            button.addEventListener("click", function(){
+                html.removeEventListener("mousemove", do_random);
+            });
+
+        </script>
+    </body>
+</html>

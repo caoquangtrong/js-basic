@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <ul>
+            <li><a href="#" class="show">Tin</a></li>
+            <li><a href="#">Khong tin</a></li>
+            <li><a href="#" class="show">Tin</a></li>
+        </ul>
+        <script>
+            var l = document.getElementsByClassName("show");
+
+            for(var i=0; i< l.length; i++){
+                l[i].onclick = function(){
+                    alert('hello');
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
