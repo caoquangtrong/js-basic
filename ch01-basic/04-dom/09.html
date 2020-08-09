@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //tao mot the moi p
+            var p = document.createElement("p");
+
+            //tao taxt node
+            var text = document.createTextNode("hello");
+
+            //them html vao p
+            p.appendChild(text);
+
+            //dua the p vao body
+            document.getElementsByTagName('body')[0].appendChild(p);
+        </script>
+    </body>
+</html>

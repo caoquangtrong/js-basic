@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <div id="top">
+            HEllo
+        </div>
+
+        <input type="button" value="append" id="btn-append">
+
+        <script>
+            //lay button
+            var button = document.getElementById("btn-append");
+
+            //them su kien click button
+            button.addEventListener("click", function(){
+                //tao 1 the h1
+                var h1 = document.createElement("h1");
+
+                //them html vao h1
+                h1.innerHTML = "hello tat ca cac ban";
+
+                //dua the h1 vao trong the div co id = top
+                document.getElementById('top').appendChild(h1);
+            });
+        </script>
+    </body>
+</html>

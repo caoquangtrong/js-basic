@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function setcontent(){
+                document.getElementById("content").innerHTML = "Noi dung da dc thay doi";
+            }
+
+            //lay noi dung the dic
+            function getcontent(){
+                var html = document.getElementById("content").innerHTML;
+                alert(html);
+            }
+            
+
+        </script>
+       
+            <div id="content">Noi dung the div</div>
+            <input type="button" value="Lay noi dung" id="getcontent" onclick="getcontent()">
+            <input type="button" value="lthay doi noi dung" id="setcontent" onclick="setcontent()">
+            
+       
+    </body>
+</html>

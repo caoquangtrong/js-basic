@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <body>
+        <input type="button" value="click" id="btn">
+
+        <script>
+            var button = document.getElementById("btn");
+
+            button.addEventListener("click", function(){
+                alert(this.id+ " " + this.value + " " + this.type);
+            }); 
+        </script>
+    </body>
+</html>

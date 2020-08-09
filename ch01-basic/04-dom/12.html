@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <div id="content"> 
+            <h5>Chuc vui ve khi hoc bai</h5>
+        </div>
+
+        <input type="button" value="Remove" id="btn-remove">
+
+        <script>
+            var button = document.getElementById("btn-remove");
+
+            //them su kiem click cho button
+            button.addEventListener("click", function(){
+                //lay the can remove
+                var need_remove = document.getElementsByTagName("h5")[0];
+
+                alert(need_remove.innerHTML);
+
+                //remove
+                document.getElementById("content").removeChild(need_remove);
+            });
+        </script>
+    </body> 
+</html>

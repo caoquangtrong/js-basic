@@ -1,0 +1,34 @@
+<html>
+    <head></head>
+    <body>
+        <div id="content">
+            <h5>Xin chao cac ban</h5>
+            <h5>Chuc cac ban vui ve khi hoc bai</h5>
+        </div>
+
+        <input type="button" value="View" id="btn-view">
+
+        <script>
+            //lay button
+            var button = document.getElementById("btn-view");
+
+            //them su kien click cho button
+            button.addEventListener("click", function(){
+                //tao moi 1 the h1
+                var h1 = document.createElement("h1");
+
+                //Them noi dung vao the h1 vua moi tao
+                h1.innerHTML = "Chao mung cac ban";
+
+                //lay the ngoai cung
+                var element = document.getElementById("content");
+
+                //lay the can inser before
+                var element_child = document.getElementsByTagName("h5")[1];
+
+                //inser before
+                element.insertBefore(h1, element_child);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function validate(){
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                var message = document.getElementById("message");
+
+                //validate
+                if(username == "" || password == ""){
+                    message.innerHTML = "ban chua nhap day du";
+                    message.style.color = "red";
+                }else{
+                    message.innerHTML = "Thanh cong";
+                    message.style.color = "green";
+                }
+            }
+        </script>
+
+        username: <input type="text" id="username"><br>
+        password: <input type="text" id="password"><br>
+        <div id="message"></div>
+        <input type="button" value="login" onclick="validate()">
+    </body>
+</html>

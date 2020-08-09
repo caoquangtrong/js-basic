@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <div id="content">
+            <h5>Chuc vui ve khi hoc bai</h5>
+        </div>
+
+        <input type="button" value="Replace" id="btn-replace">
+
+        <script>
+            //lay button
+            var button = document.getElementById("btn-replace");
+
+            //them su kiem click
+            button.addEventListener("click", function(){
+                //tao the moi
+                var h1 = document.createElement("h1");
+                h1.innerHTML = "Xin chao nhe, thay the day";
+
+                //lay the can replase
+                var need_replace = document.getElementsByTagName("h5")[0];
+
+                //replace
+                var con = document.getElementById('content');
+                con.replaceChild(h1, need_replace);
+
+            })
+        </script>
+    </body> 
+</html>
