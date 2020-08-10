@@ -1,0 +1,13 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            Number.prototype.cong = function(value){
+                return this.valueOf()+parseInt(value);
+            }
+
+            var age = Number(12);
+            document.write(age.cong(12));
+        </script>
+    </body>
+</html>

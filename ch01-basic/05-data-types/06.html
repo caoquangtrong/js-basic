@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var timeobject = new Date();
+            var date = new Date(2020, 11, 20);
+            var iso1 = new Date("2014-11-20");
+            var iso2= new Date("2014-11");
+            var iso3 = new Date("2014");
+
+            var long1 = new Date("Mar 25 2015");
+            var long2 = new Date("2015 Mar 25");
+            var long3 = new Date("25 2015 Mar");
+
+            var short1 = new Date("03-25-2015");
+            var short2 = new Date("03/25/2015");
+            var short3 = new Date("2015/03/35");
+            var short4 = new Date("2015-03-25");
+
+            var d = new Date("wed Mar 25 2015 09:56:24 GMT+0100 (W. Europe Standard Time)");
+            
+            document.writeln(d);
+
+        </script>
+    </body>
+</html>

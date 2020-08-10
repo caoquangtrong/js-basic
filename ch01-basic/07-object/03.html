@@ -1,0 +1,49 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            // var comment = new Object();
+            // comment.addcomment = function(){
+            //     alert("hello");
+            // }
+            // comment.addcomment();
+           
+            var favorite = {
+                    food : '',
+                    tvshow: '',
+                    addfavorite : function(a,b){
+                        this.food = a;
+                        this.tvshow = b;
+                    },
+                    showfavorite : function(){
+                        alert(this.food+ "-" + this.tvshow);
+                    }
+            };
+            var comment1 = {
+                title : '',
+                content : '',
+                fullname : '',
+                email : '',
+                favorite,
+
+                addcomment : function(){
+                    favorite.addfavorite("hoa qua", "Ai la triu phu");
+                    favorite.showfavorite();
+                },
+                nextcomment : function(){
+                    alert(this.content);
+                }
+
+            }
+            comment1.title = "hello world";
+            comment1.content = "goodbye";
+            comment1.addcomment();
+
+            // var comment2 = {}
+            // comment2.addcomment = function(){
+            //     alert("hello");
+            // }
+            // comment2.addcomment();
+        </script>
+    </body>
+</html>

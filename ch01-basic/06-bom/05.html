@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        click vao day de chuyen huong den facebpook
+        <button onclick="replacepage()">replace</button>
+        <button onclick="hrefpage()">location.href</button>
+        <button onclick="assignpage()">assign</button>
+        <script>
+            function replacepage(){
+                window.location.replace('https://facebook.com');
+            }
+
+            function hrefpage(){
+                window.location.href = 'https://facebook.com';
+            }
+            function assignpage(){
+                window.location.assign('http://facebook.com');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function persion(){
+                this.name = "";
+                this.email = "";
+                this.address = "";
+
+                this.showinfo = function(){
+                    document.write("Tên là: " + this.name + "<br/>");
+                    document.write("Email là: " + this.email + "<br/>");
+                    document.write("Địa chỉ là: " + this.address + "<br/>");  
+                }
+            }
+
+            persion.prototype.gender = "";
+            persion.prototype.showgender = function(){
+                document.write(this.gender);
+            }
+            persion.prototype.showinfo1 = function(){
+                this.showinfo();
+                document.write("Gioi tinh la: " + this.gender + "<br/>");  
+            }
+
+            var cuong = new persion();
+
+            cuong.name = "Nguyễn Văn Cường";
+            cuong.email = "thehalfheart@gmail.com";
+            cuong.address = "Buôn Ma Thuột ĐăkLăk";
+            cuong.gender = "nam";
+            cuong.showinfo1();
+
+
+        </script>
+    </body>
+</html>

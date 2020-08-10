@@ -1,0 +1,23 @@
+<html>
+    <body>
+      <script language="javascript">
+         
+        var windowChild = null;
+         
+        function openWindow()
+        {
+            windowChild = window.open('https://freetuts.net', "windowChild", "width=500, height=500");
+            return false;
+        }
+         
+        function moveWindow()
+        {
+            windowChild.moveTo(500, 100);
+            windowChild.focus();
+            return false;
+        }
+      </script>
+      <a href="#" onclick="return openWindow()">Open</a>
+      <a href="#" onclick="return moveWindow()">Move</a>
+    </body>
+</html>

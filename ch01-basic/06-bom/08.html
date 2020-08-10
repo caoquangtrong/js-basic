@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function WriteCookie(){
+                var customer_value = document.getElementById("customer").value;
+                if(customer_value == ""){
+                    alert("Enter some values!");
+                }
+                var cookievalue = escape(customer_value)+";";
+                document.cookie = "name="+cookievalue;
+                document.write("Setting cookies: "+ "name="+cookievalue);
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" name="myform">
+            Enter name: <input type="text" id="customer">
+            <input type="button" value="Set Cookie" onclick="WriteCookie()">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var totalpage = window.history.length;
+            //alert(totalpage);
+            function pback(){
+                window.history.back();
+            }
+            function pforward(){
+                window.history.forward();
+            }
+            
+            
+            function pgo(){
+                var n = document.getElementById("history").value;
+                alert(n.toString());
+                window.history.go(-n);
+            }
+
+            
+        </script>
+        <button onclick="pback()">back</button>
+        <button onclick="pforward()">forward</button>
+        <input type="text" id="history">
+        <button onclick="pgo()">history go</button>
+    </body>
+</html>
