@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function print_for(){
+                var input_data = document.getElementById("input-data").value;
+                input_data = parseInt(input_data);
+                var result = '';
+                for(var i = 0; i<input_data; i++){
+                    result += i + "<br>";
+                }
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
+        <input type="text" name="" id="input-data">
+        <input type="button" onclick="print_for()" value="click me">;
+        <div id="result"></div>
+    </body>
+</html>

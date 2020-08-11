@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function deleteE(){
+                var elements = document.getElementsByTagName("div");
+
+                var elements_delete =[];
+                for(var i=0; i<elements.length; i++){
+                    if(i%2==0){
+                    elements_delete.push(elements[i]);
+                    }
+                }
+                for(var i=0; i<elements_delete.length; i++){
+                elements_delete[i].remove();
+                }
+            }
+        </script>
+        <div>le</div>
+        <div>chan</div>
+        <div>le</div>
+        <div>chan</div>
+        <div>le</div>
+        <div>chan</div>
+        <div>le</div>
+        <div>chan</div>
+        <div>le</div>
+        <div>chan</div>
+        <input type="button" onclick="deleteE()" value="click me">
+    </body>
+</html>

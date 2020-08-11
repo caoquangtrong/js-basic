@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            window.onload = function(){
+                var button = document.getElementsByTagName("input");
+
+                for(var i=0; i<button.length; i++){
+                    button[i].addEventListener("click", function(){
+                        var parent_element = this.parentElement.parentElement;
+                        parent_element.remove();
+                    });
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+        <h1>Xo the html</h1>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>1</td>
+                <td>Tieu de thu nhat</td>
+                <td><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tieu de thu hai</td>
+                <td><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Tieu de thu ba</td>
+                <td><input type="button" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Tieu de thu tu</td>
+                <td><input type="button" value="Delete"></td>
+            </tr>
+        </table>
+    </body> 
+</html>

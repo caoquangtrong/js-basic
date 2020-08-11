@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //kiem tra so nguyen to
+            function check(n){
+                if(n>1){
+                    for(var i=2; i<=Math.sqrt(n); i++){
+                        if(n%i==0){
+                            return false;
+                        }
+                    }
+                    return true;
+                }else{
+                    return false;
+                }
+                
+            }
+            for(var i=0; i<100; i++){
+                if(check(i)){
+                    document.writeln(i + " : "+ check(i)+"<br>");
+                }
+            }
+        </script>
+    </body>
+</html>

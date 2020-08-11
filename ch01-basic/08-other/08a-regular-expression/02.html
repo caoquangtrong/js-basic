@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let datetime = /\d\d-\d\d-\d\d\d\d \d\d:\d\d/;
+            document.write(datetime.test("11-10-2002 13:23"));
+            //=> true
+            document.write(datetime.test("30-jan-2003 15:20"));
+            //=?false
+            document.write(datetime.test("111-10-2002 13:231"));
+            //=>true
+            document.write(datetime.test("11-110-20021 13:23"));
+            //=> false;
+        </script>
+    </body>
+</html>

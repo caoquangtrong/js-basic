@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <div>div 1</div>
+        <div>div 2</div>
+        <div>div 3</div>
+        <div>div 4</div>
+        <div>div 5</div>
+        <div>div 6</div>
+        <div>div 7</div>
+        <div>div 8</div>
+        <div>div 9</div>
+        <div>div 10</div>
+        <script>
+            var d = document.getElementsByTagName("div");
+            for(var i=0; i<10; i++){
+                if(i%2==0){
+                    d[i].style.color = "red";
+                }else{
+                    d[i].style.color = "green";
+                }
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            
+            //dau cong co y nghia chi rang thanh phan trong rg 
+            //lap lai nhieu hon 1 lan
+            document.write(/'\d+'/.test("'123'"));
+            //=>true
+
+            document.write(/'\d+'/.test("'1'"))
+            //=>true, van tinh la co 1 lan
+
+            document.write(/'\d+'/.test("''"));
+            //=> \d khong co, tuc khong lap lai lan nao nen false
+
+            document.write(/'\d*'/.test("'123'"));
+            //true
+            //* chi rang cho phep khong lap lai
+            document.write(/'\d*'/.test("''"));
+            //=> true luoon
+
+        </script>
+    </body>
+</html>
