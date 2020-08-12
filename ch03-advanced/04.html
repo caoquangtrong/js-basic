@@ -1,0 +1,17 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var domain = "hello.net";
+            try{
+                if(domain!== 'ello.net'){
+                    throw new Error("domain khac");
+                }
+            } catch (e){
+                console.log(e.message);
+            } finally {
+                console.log('end');
+            }
+        </script>
+    </body>
+</html>

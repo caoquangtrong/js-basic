@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function UserError(){
+                this.throwLogin = function(){
+                    throw new Error("Invalid username or password");
+                }
+
+                this.throwSession = function(){
+                    throw new Error('Your request is time out');
+                }
+                return this;
+            }
+
+            var username = 'admin';
+            var password = 'admin';
+            try{
+                if(username !== 'admin' || password != 'admin'){
+                    var userError = new UserError();
+                    userError.throwLogin();
+                }
+            } catch(e){
+                console.log(e.message);
+            }
+        </script>
+    </body>
+</html>

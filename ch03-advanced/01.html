@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function User(){
+                this.name = '';
+                this.password = '';
+
+                this.setInfo = function(username, password){
+                    this.username = username;
+                    this.password = password;
+                }
+
+                this.checkLogin = function(){
+                    return(this.username == 'admin' && this.password == 'admin');
+                }
+
+                //phai return this thi moi tao dc doi tuong
+                return this;
+            }
+
+            var user = new User();
+            user.setInfo("admin", 'admin');
+            if(user.checkLogin()){
+                alert("dang nhap thanh cong")
+            }else{
+                alert("dang nhap that bao");
+            }
+        </script>
+    </body>
+</html>
